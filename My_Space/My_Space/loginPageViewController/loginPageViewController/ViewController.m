@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  My_Space
+//  loginPageViewController
 //
 //  Created by Senthilram Appadurai on 7/24/15.
 //  Copyright (c) 2015 Senthilram Appadurai. All rights reserved.
@@ -16,22 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //[[NSBundle mainBundle] loadNibNamed:@"ViewController" owner:nil options:nil];
+    // Do any additional setup after loading the view, typically from a nib.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)signUpButtonPress:(id)sender {
-}
-
-- (IBAction)signInButtonPress:(id)sender {
-}
-
-- (IBAction)forgotPasswordButtonPress:(id)sender {
-}
 @end

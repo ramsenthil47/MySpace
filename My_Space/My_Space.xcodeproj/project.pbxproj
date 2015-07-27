@@ -14,6 +14,8 @@
 		A27FA54F1B62FFBE00050639 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27FA54E1B62FFBE00050639 /* Images.xcassets */; };
 		A27FA5521B62FFBE00050639 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FA5501B62FFBE00050639 /* LaunchScreen.xib */; };
 		A27FA55E1B62FFBE00050639 /* My_SpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A27FA55D1B62FFBE00050639 /* My_SpaceTests.m */; };
+		A27FA5681B632F0D00050639 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27FA5671B632F0D00050639 /* ViewController.xib */; };
+		AE2444AE5216B06E732CB87A /* libPods-My_Space.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B1B7F6B3925384FCFAF908 /* libPods-My_Space.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12B1B7F6B3925384FCFAF908 /* libPods-My_Space.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_Space.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0FDFBF5E2307DEAA9C071C /* Pods-My_Space.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Space.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My_Space/Pods-My_Space.debug.xcconfig"; sourceTree = "<group>"; };
 		A27FA53E1B62FFBE00050639 /* My_Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Space.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27FA5421B62FFBE00050639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27FA5431B62FFBE00050639 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		A27FA5571B62FFBE00050639 /* My_SpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My_SpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27FA55C1B62FFBE00050639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27FA55D1B62FFBE00050639 /* My_SpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_SpaceTests.m; sourceTree = "<group>"; };
+		A27FA5671B632F0D00050639 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D14C7296F63E58C163F632CF /* Pods-My_Space.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Space.release.xcconfig"; path = "Pods/Target Support Files/Pods-My_Space/Pods-My_Space.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2444AE5216B06E732CB87A /* libPods-My_Space.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02CE2B36EC472B1706F96699 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D0FDFBF5E2307DEAA9C071C /* Pods-My_Space.debug.xcconfig */,
+				D14C7296F63E58C163F632CF /* Pods-My_Space.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A5D152B2AE583083BE432E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12B1B7F6B3925384FCFAF908 /* libPods-My_Space.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A27FA5351B62FFBE00050639 = {
 			isa = PBXGroup;
 			children = (
 				A27FA5401B62FFBE00050639 /* My_Space */,
 				A27FA55A1B62FFBE00050639 /* My_SpaceTests */,
 				A27FA53F1B62FFBE00050639 /* Products */,
+				02CE2B36EC472B1706F96699 /* Pods */,
+				6A5D152B2AE583083BE432E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +115,7 @@
 				A27FA54E1B62FFBE00050639 /* Images.xcassets */,
 				A27FA5501B62FFBE00050639 /* LaunchScreen.xib */,
 				A27FA5411B62FFBE00050639 /* Supporting Files */,
+				A27FA5671B632F0D00050639 /* ViewController.xib */,
 			);
 			path = My_Space;
 			sourceTree = "<group>";
@@ -126,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27FA5611B62FFBE00050639 /* Build configuration list for PBXNativeTarget "My_Space" */;
 			buildPhases = (
+				266E2CA2AD9BFBDA8E94AF89 /* Check Pods Manifest.lock */,
 				A27FA53A1B62FFBE00050639 /* Sources */,
 				A27FA53B1B62FFBE00050639 /* Frameworks */,
 				A27FA53C1B62FFBE00050639 /* Resources */,
+				88CF04FC37499EA66B2A9F54 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27FA5681B632F0D00050639 /* ViewController.xib in Resources */,
 				A27FA54D1B62FFBE00050639 /* Main.storyboard in Resources */,
 				A27FA5521B62FFBE00050639 /* LaunchScreen.xib in Resources */,
 				A27FA54F1B62FFBE00050639 /* Images.xcassets in Resources */,
@@ -213,6 +243,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		266E2CA2AD9BFBDA8E94AF89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88CF04FC37499EA66B2A9F54 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My_Space/Pods-My_Space-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A27FA53A1B62FFBE00050639 /* Sources */ = {
@@ -347,6 +410,7 @@
 		};
 		A27FA5621B62FFBE00050639 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0FDFBF5E2307DEAA9C071C /* Pods-My_Space.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = My_Space/Info.plist;
@@ -357,6 +421,7 @@
 		};
 		A27FA5631B62FFBE00050639 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14C7296F63E58C163F632CF /* Pods-My_Space.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = My_Space/Info.plist;
@@ -418,6 +483,7 @@
 				A27FA5631B62FFBE00050639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A27FA5641B62FFBE00050639 /* Build configuration list for PBXNativeTarget "My_SpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +492,7 @@
 				A27FA5661B62FFBE00050639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

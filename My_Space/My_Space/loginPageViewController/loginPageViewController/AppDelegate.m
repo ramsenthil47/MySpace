@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  My_Space
+//  loginPageViewController
 //
 //  Created by Senthilram Appadurai on 7/24/15.
 //  Copyright (c) 2015 Senthilram Appadurai. All rights reserved.
@@ -16,11 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewcontroller=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
-    [self.window setRootViewController:self.viewcontroller];
-    [self.window makeKeyAndVisible];
+    // Override point for customization after application launch.
     return YES;
 }
 
