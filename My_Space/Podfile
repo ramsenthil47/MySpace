@@ -2,6 +2,7 @@
 
 target 'My_Space' do
 pod 'AFNetworking', '~> 2.5'
+pod 'Parse', '~> 1.7'
 end
 
 target 'My_SpaceTests' do
